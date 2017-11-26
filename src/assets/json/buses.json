@@ -1,0 +1,19 @@
+[
+    {
+        "numberplate": "KCD 765D",
+        "drivername": "Mercy Njeri",
+        "phonenumber": "0734778343",
+        "route": "Kayole"
+    },
+    {
+        "numberplate":"KCA 675S",
+        "drivername":"Benson Isoe",
+        "phonenumber":"0785543334",
+        "route":"Outer Ring"
+    },{
+        "numberplate": "KBG 877H",
+        "drivername": "James Opiyo",
+        "phonenumber": "0712332776",
+        "route":"Utawala"
+    }
+]

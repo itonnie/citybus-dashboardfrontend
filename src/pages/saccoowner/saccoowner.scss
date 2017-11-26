@@ -1,0 +1,13 @@
+page-saccoowner {
+    .flexbox {
+        display: flex;
+
+        .leftPanel {
+            flex: 1;
+        }
+
+        .rightPanel {
+            flex: 2;
+        }
+    }
+}

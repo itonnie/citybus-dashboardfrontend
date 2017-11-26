@@ -1,0 +1,57 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>CityBus</ion-title>
+
+    <ion-buttons end>
+      <button ion-button>Username</button>
+      <button ion-button icon-only>
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="container">
+    <div class="flexbox">
+      <div class="leftPanel">
+          <h3>Buses</h3>
+          <ion-list>
+            <ion-item-sliding *ngFor="let driver of drivers">
+              <ion-item>
+                <ion-avatar item-start>
+                  <button ion-button icon-only>
+                    <ion-icon name="bus"></ion-icon>
+                  </button>
+                </ion-avatar>
+                <h2>{{driver.numberplate}}</h2>
+                <p>{{driver.drivername}}</p>
+              </ion-item>
+              <ion-item-options side="left">
+                <button ion-button color="primary">
+                  <ion-icon name="text"></ion-icon>
+                  Text
+                </button>
+                <button ion-button color="secondary">
+                  <ion-icon name="call"></ion-icon>
+                  Call
+                </button>
+              </ion-item-options>
+              <ion-item-options side="right">
+                <button ion-button color="primary">
+                  <ion-icon name="info"></ion-icon>
+                  Details
+                </button>
+              </ion-item-options>
+            </ion-item-sliding>
+          </ion-list>
+      </div>
+      <div class="rightPanel">
+
+      </div>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,36 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Sacco Owner Authentication</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="closePopup()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <div padding>
+      <ion-segment [(ngModel)]="auth">
+        <ion-segment-button value="login">
+          LOG IN
+        </ion-segment-button>
+        <ion-segment-button value="signup">
+          SIGN UP
+        </ion-segment-button>
+      </ion-segment>
+    </div>
+  <div [ngSwitch]="auth">
+    <ion-list *ngSwitchCase="'login'">
+      Login
+    </ion-list>
+  
+    <ion-list *ngSwitchCase="'signup'">
+      Sign Up
+    </ion-list>
+  </div>
+</ion-content>
